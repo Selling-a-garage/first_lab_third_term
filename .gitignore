@@ -1,0 +1,3 @@
+src/EXCLUDE_ME.cpp
+.venv
+.vscode

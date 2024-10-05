@@ -1,0 +1,9 @@
+#include "../inc/BonusDice.h"
+
+BonusDice::BonusDice(AbstractDice& d) : d(d) { }
+
+unsigned BonusDice::roll() {
+    unsigned roll1 = d.roll();
+    unsigned roll2 = d.roll();
+    return roll1<roll2 ? roll2 : roll1;
+}
